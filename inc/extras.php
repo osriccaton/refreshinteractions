@@ -46,3 +46,13 @@ function change_logo_class($html)
 	$html = str_replace('class="custom-logo-link"', 'class="navbar-brand custom-logo-link"', $html);
 	return $html;
 }
+
+//Add CPT's
+$work = new Super_Custom_Post_Type( 'work', 'Work', 'All Our Work');
+
+//Allow SVG Upload
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');

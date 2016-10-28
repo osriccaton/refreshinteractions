@@ -7398,3 +7398,12 @@ a.skip-link {
       border-radius: 30px; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
+
+body {
+  background: #f8f8f8; }
+
+.navbar-brand {
+  width: 200px; }
+
+.contact-form input, .contact-form textarea {
+  font-size: 2rem; }
